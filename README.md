@@ -30,39 +30,7 @@ Todo el proyecto está desarrollado con HTML5 + CSS3 + SASS.
 
 ## 📁 Estructura del proyecto
 
-hospital-estilos/
-├── README.md                          (ya lo tienes, lo pulimos)
-├── index.html                         (página principal – menú a todo)
-├── login.html                         (login básico)
-├── guia-estilos.html                  (guía completa de colores/tipos/iconos)
-├── assets/                            (nueva: imágenes, iconos, fonts)
-│   ├── images/                        (fotos hospitalarias, logos)
-│   ├── icons/                         (SVGs para stethoscope, bed, etc.)
-│   └── fonts/                         (si usamos custom, pero por ahora Google Fonts)
-├── css/                               (nueva: estilos base comunes para login/index/guía)
-│   └── base.css                       (reset + variables CSS compartidas)
-├── prescripciones/                    (ya la tienes – CSS puro)
-│   ├── lista-citas.html
-│   ├── detalle-cita.html
-│   ├── historia-clinica.html
-│   ├── busqueda-pacientes.html
-│   └── css/
-│       └── styles.css                 (CSS puro específico)
-├── enfermeria/                        (ya la tienes – SASS)
-│   ├── mapa-camas.html
-│   ├── hoja-medicacion.html
-│   ├── scss/
-│   │   ├── _variables.scss
-│   │   └── styles.scss
-│   └── css/
-│       └── styles.css                 (compilado de SASS)
-└── urgencias/                         (nueva: para Tailwind – la creamos en Fase 6)
-    ├── registro-urgencias.html
-    ├── triaje.html
-    ├── tailwind.config.js              (config Tailwind)
-    └── css/
-        └── output.css                  (compilado de Tailwind)
-
+<img width="633" height="565" alt="image" src="https://github.com/user-attachments/assets/447dd589-cf60-4303-8193-d679018c8838" />
 
 ---
 
