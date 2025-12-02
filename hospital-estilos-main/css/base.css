@@ -1,33 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --azul-oscuro: #0f172a;
-  --azul-medico: #1e40af;
-  --blanco: #ffffff;
-  --gris-claro: #f8fafc;
-  --texto: #1e293b;
+  --primary: #0f172a;
+  --secondary: #1e40af;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --neutral: #f8fafc;
+  --text: #1e293b;
+  --light: #ffffff;
+  --border: #e2e8f0;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--gris-claro);
-  color: var(--texto);
+  background: var(--neutral);
+  color: var(--text);
+  line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medico));
-  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--light);
   padding: 2rem 1rem;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
   font-size: 2.8rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -37,27 +44,42 @@ nav ul {
   justify-content: center;
   gap: 1rem;
   list-style: none;
+  margin-top: 1rem;
 }
 
 nav a {
-  color: white;
-  background: rgba(255,255,255,0.2);
-  padding: 0.7rem 1.4rem;
+  color: var(--light);
   text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  background: rgba(255,255,255,0.15);
   border-radius: 8px;
   font-weight: 500;
+  transition: all 0.3s;
 }
 
 nav a:hover {
-  background: white;
-  color: var(--azul-oscuro);
+  background: var(--light);
+  color: var(--primary);
 }
 
-main { flex: 1; padding: 3rem 1rem; text-align: center; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
 
 footer {
-  background: var(--azul-oscuro);
-  color: white;
+  background: var(--primary);
+  color: var(--light);
   text-align: center;
   padding: 1.5rem;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 { font-size: 2.2rem; }
+  nav ul { flex-direction: column; }
+  nav a { width: 80%; margin: 0 auto; }
 }
