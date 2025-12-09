@@ -30,7 +30,7 @@ Todo el proyecto está desarrollado con HTML5 + CSS3 + SASS.
 
 ## 📁 Estructura del proyecto
 
-<img width="633" height="565" alt="image" src="https://github.com/user-attachments/assets/447dd589-cf60-4303-8193-d679018c8838" />
+<img width="254" height="573" alt="estructura hospital" src="https://github.com/user-attachments/assets/d0fde44d-cae3-4da7-97ad-098baed14c4c" />
 
 ---
 
