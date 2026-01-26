@@ -1,1 +1,107 @@
-<!-- Página de detalle cita -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de cita | Prescripciones</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle de cita médica y registro de prescripción">
+
+    <!-- CSS puro para este módulo (se añadirá más adelante) -->
+</head>
+<body>
+
+    <!-- ================= CABECERA ================= -->
+    <header>
+        <div>
+            <h1>Hospital Central</h1>
+            <p>Prescripciones médicas</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Inicio</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="busqueda-pacientes.html">Buscar paciente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
+
+        <!-- ===== DATOS DEL PACIENTE ===== -->
+        <section>
+            <h2>Datos del paciente</h2>
+
+            <ul>
+                <li><strong>Nombre:</strong> Ana López</li>
+                <li><strong>DNI:</strong> 12345678A</li>
+                <li><strong>Edad:</strong> 45 años</li>
+                <li><strong>Sexo:</strong> Femenino</li>
+            </ul>
+        </section>
+
+        <!-- ===== INFORMACIÓN DE LA CITA ===== -->
+        <section>
+            <h2>Información de la cita</h2>
+
+            <ul>
+                <li><strong>Fecha:</strong> 10/02/2025</li>
+                <li><strong>Hora:</strong> 09:00</li>
+                <li><strong>Especialidad:</strong> Medicina General</li>
+                <li><strong>Médico asignado:</strong> Dr. Juan Pérez</li>
+            </ul>
+        </section>
+
+        <!-- ===== REGISTRO DE PRESCRIPCIÓN ===== -->
+        <section>
+            <h2>Registro de prescripción médica</h2>
+
+            <form>
+
+                <div>
+                    <label for="diagnostico">Diagnóstico</label><br>
+                    <textarea id="diagnostico" name="diagnostico" rows="4" cols="50"
+                        placeholder="Descripción del diagnóstico"></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="medicacion">Medicación prescrita</label><br>
+                    <textarea id="medicacion" name="medicacion" rows="4" cols="50"
+                        placeholder="Indicar medicación y pauta"></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="observaciones">Observaciones</label><br>
+                    <textarea id="observaciones" name="observaciones" rows="3" cols="50"
+                        placeholder="Observaciones adicionales"></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Guardar prescripción</button>
+
+            </form>
+
+            <p>
+                <a href="citas.html">← Volver a la lista de citas</a> |
+                <a href="historia-clinica.html">Ver historia clínica</a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer>
+        <p>
+            © 2025 Hospital Central · Prescripciones médicas
+        </p>
+    </footer>
+
+</body>
+</html>

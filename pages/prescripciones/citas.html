@@ -1,1 +1,99 @@
-<!-- Página de citas -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de citas | Prescripciones</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listado de citas médicas">
+
+    <!-- CSS puro para este módulo (se añadirá más adelante) -->
+</head>
+<body>
+
+    <!-- ================= CABECERA ================= -->
+    <header>
+        <div>
+            <h1>Hospital Central</h1>
+            <p>Prescripciones médicas</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Inicio</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="busqueda-pacientes.html">Buscar paciente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
+
+        <section>
+            <h2>Lista de citas programadas</h2>
+            <p>
+                A continuación se muestran las citas médicas programadas
+                para el día seleccionado.
+            </p>
+        </section>
+
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Paciente</th>
+                        <th>DNI</th>
+                        <th>Especialidad</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Ana López</td>
+                        <td>12345678A</td>
+                        <td>Medicina General</td>
+                        <td>
+                            <a href="detalle-cita.html">Ver detalle</a> |
+                            <a href="historia-clinica.html">Historia clínica</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>09:30</td>
+                        <td>Carlos Pérez</td>
+                        <td>87654321B</td>
+                        <td>Cardiología</td>
+                        <td>
+                            <a href="detalle-cita.html">Ver detalle</a> |
+                            <a href="historia-clinica.html">Historia clínica</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>10:00</td>
+                        <td>María Gómez</td>
+                        <td>11223344C</td>
+                        <td>Pediatría</td>
+                        <td>
+                            <a href="detalle-cita.html">Ver detalle</a> |
+                            <a href="historia-clinica.html">Historia clínica</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer>
+        <p>
+            © 2025 Hospital Central · Módulo de prescripciones médicas
+        </p>
+    </footer>
+
+</body>
+</html>

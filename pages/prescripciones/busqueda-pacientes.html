@@ -1,1 +1,102 @@
-<!-- Página de busqueda pacientes -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Búsqueda de pacientes | Prescripciones</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Búsqueda de pacientes sin cita previa">
+
+    <!-- CSS puro para este módulo (se añadirá más adelante) -->
+</head>
+<body>
+
+    <!-- ================= CABECERA ================= -->
+    <header>
+        <div>
+            <h1>Hospital Central</h1>
+            <p>Prescripciones médicas</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="../../home.html">Inicio</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="busqueda-pacientes.html">Buscar paciente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
+
+        <!-- ===== FORMULARIO DE BÚSQUEDA ===== -->
+        <section>
+            <h2>Búsqueda de pacientes</h2>
+            <p>
+                Introduzca los datos del paciente para realizar la búsqueda.
+            </p>
+
+            <form>
+                <label for="nombre">Nombre o apellidos</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre del paciente">
+
+                <br><br>
+
+                <label for="dni">DNI</label><br>
+                <input type="text" id="dni" name="dni" placeholder="DNI del paciente">
+
+                <br><br>
+
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <!-- ===== RESULTADOS ===== -->
+        <section>
+            <h2>Resultados de la búsqueda</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>DNI</th>
+                        <th>Edad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana López</td>
+                        <td>12345678A</td>
+                        <td>45</td>
+                        <td>
+                            <a href="historia-clinica.html">Historia clínica</a> |
+                            <a href="detalle-cita.html">Registrar prescripción</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Carlos Pérez</td>
+                        <td>87654321B</td>
+                        <td>60</td>
+                        <td>
+                            <a href="historia-clinica.html">Historia clínica</a> |
+                            <a href="detalle-cita.html">Registrar prescripción</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer>
+        <p>
+            © 2025 Hospital Central · Prescripciones médicas
+        </p>
+    </footer>
+
+</body>
+</html>

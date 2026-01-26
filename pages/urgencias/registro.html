@@ -1,1 +1,102 @@
-<!-- Página de registro -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro en Urgencias | Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="bg-red-700 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Hospital Central</h1>
+      <nav class="space-x-6">
+        <a href="../../home.html" class="hover:underline">Inicio</a>
+        <a href="registro.html" class="font-semibold underline">Urgencias</a>
+        <a href="../prescripciones/lista-citas.html" class="hover:underline">Prescripciones</a>
+        <a href="../enfermeria/mapa-camas.html" class="hover:underline">Enfermería</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-grow max-w-5xl mx-auto px-6 py-10">
+
+    <!-- TÍTULO -->
+    <section class="mb-8">
+      <h2 class="text-3xl font-bold text-red-700 mb-2">Registro en Urgencias</h2>
+      <p class="text-gray-600">
+        Introduzca los datos del paciente para su admisión inmediata en el servicio de urgencias.
+      </p>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="bg-white rounded-lg shadow-md p-8">
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Nombre -->
+        <div>
+          <label class="block font-semibold mb-1">Nombre</label>
+          <input type="text" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600">
+        </div>
+
+        <!-- Apellidos -->
+        <div>
+          <label class="block font-semibold mb-1">Apellidos</label>
+          <input type="text" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600">
+        </div>
+
+        <!-- DNI -->
+        <div>
+          <label class="block font-semibold mb-1">DNI</label>
+          <input type="text" class="w-full border rounded px-3 py-2">
+        </div>
+
+        <!-- Fecha de nacimiento -->
+        <div>
+          <label class="block font-semibold mb-1">Fecha de nacimiento</label>
+          <input type="date" class="w-full border rounded px-3 py-2">
+        </div>
+
+        <!-- Motivo -->
+        <div class="md:col-span-2">
+          <label class="block font-semibold mb-1">Motivo de consulta</label>
+          <textarea rows="4" class="w-full border rounded px-3 py-2"></textarea>
+        </div>
+
+        <!-- Prioridad -->
+        <div>
+          <label class="block font-semibold mb-1">Prioridad inicial</label>
+          <select class="w-full border rounded px-3 py-2">
+            <option>Seleccione</option>
+            <option>Alta</option>
+            <option>Media</option>
+            <option>Baja</option>
+          </select>
+        </div>
+
+        <!-- Botón -->
+        <div class="flex items-end">
+          <a href="triaje.html"
+             class="bg-red-700 text-white px-6 py-2 rounded hover:bg-red-800 transition">
+            Registrar y pasar a Triaje
+          </a>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-4">
+    <p>© 2025 Hospital Central · Servicio de Urgencias</p>
+  </footer>
+
+</body>
+</html>
