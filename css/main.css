@@ -1,1 +1,216 @@
-/* Estilos generales del proyecto */
+/* ====== VARIABLES SEGÚN GUÍA DE ESTILOS ====== */
+:root {
+  --primary-color: #1E88E5;    /* Azul sanitario */
+  --secondary-color: #43A047;  /* Verde clínico */
+  --alert-color: #E53935;      /* Rojo urgencias */
+  --bg-color: #F5F5F5;         /* Fondo general */
+  --text-color: #2c3e50;
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====== ESTILOS GLOBALES ====== */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== CABECERA ====== */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+header div h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header div p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Secciones principales */
+main section {
+  margin-bottom: 2rem;
+}
+
+/* Áreas principales - lista */
+main section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+main section ul li {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Titulos y párrafos dentro de cada área */
+main section ul li h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+main section ul li p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+/* Botones de acceso */
+main section ul li a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+main section ul li a:hover {
+  background-color: #1565c0; /* Azul más oscuro */
+}
+
+/* ====== PIE DE PÁGINA ====== */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+
+
+
+/* Formulario */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: var(--text-color);
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(30,136,229,0.5);
+  outline: none;
+}
+
+/* Botón */
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #1565c0; /* azul más oscuro */
+}
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-formulario h2 {
+    text-align: center;
+}
+
+
+
