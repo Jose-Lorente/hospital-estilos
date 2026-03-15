@@ -94,7 +94,6 @@ button, .btn {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s;
 }
 
 button:hover, .btn:hover {

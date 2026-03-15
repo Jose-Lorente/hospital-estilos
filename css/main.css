@@ -15,6 +15,10 @@ body {
   background-color: var(--bg-color);
   margin: 0;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
 
 h1, h2, h3, h4 {
@@ -49,6 +53,11 @@ header {
   flex-wrap: wrap;
 }
 
+header h1,
+header p {
+  color: white;
+}
+
 header div h1 {
   margin: 0;
   font-size: 1.8rem;
@@ -81,6 +90,7 @@ main {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 2rem;
+  flex: 1;
 }
 
 /* Secciones principales */
@@ -127,7 +137,7 @@ main section ul li a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  
 }
 
 main section ul li a:hover {
@@ -137,14 +147,16 @@ main section ul li a:hover {
 /* ====== PIE DE PÁGINA ====== */
 footer {
   background-color: #2c3e50;
-  color: #ecf0f1;
+  color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
   font-size: 0.9rem;
 }
 
-
+footer p {
+  color: white;
+}
 
 
 /* Formulario */
@@ -194,7 +206,7 @@ form button {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  
 }
 
 form button:hover {

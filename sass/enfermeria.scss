@@ -1,1 +1,9 @@
-// Estilos Sass - Unidad de enfermería
+@import "variables";
+@import "mixins";
+@import "layout";
+@import "tables";
+
+section {
+  @include tarjeta;
+  margin-bottom: 20px;
+}
