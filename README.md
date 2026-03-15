@@ -10,7 +10,7 @@ Sistema de Gestión Hospitalaria – Proyecto de Desarrollo de Interfaces Web
 
 ## URL del despliegue en GitHub Pages
 
-https://github.com/Jose-Lorente/hospital-estilos/tree/main
+https://jose-lorente.github.io/hospital-estilos/
 
 ## Descripción del proyecto
 
@@ -27,45 +27,7 @@ Tailwind CSS para la maquetación de la sección de urgencias
 
 ## Estructura del proyecto
 
-hospital-project/
-
-index.html
-home.html
-guia-estilos.html
-
-css/
-main.css
-prescripciones.css
-enfermeria.css
-
-sass/
-_variables.scss
-_mixins.scss
-_layout.scss
-_tables.scss
-enfermeria.scss
-
-pages/
-
-prescripciones/
-busqueda-pacientes-html
-citas.html
-detalle-cita.html
-historia.clinica.html
-
-enfermeria/
-mapa-camas.html
-hoja-medicacion.html
-
-urgencias/
-registro.html
-triaje.html
-
-assets/
-img/
-icons/
-
-README.md
+![alt text](image.png)
 
 ## Organización del proyecto
 
